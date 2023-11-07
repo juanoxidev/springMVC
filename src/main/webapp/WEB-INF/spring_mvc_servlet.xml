@@ -24,6 +24,11 @@
 	</bean>
 	<!--  Le indicamos a spring donde estan nuestros recursos -->
 <mvc:resources location="/recursos/" mapping="/recursos/**"></mvc:resources>
+
+	<!--  Le indicamos a spring donde estan nuestros mensajes de errores -->
+	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+	<property name="basenames" value="resources/messages"></property>
+	</bean>
 </beans>
 
 

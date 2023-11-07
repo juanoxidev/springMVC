@@ -30,7 +30,25 @@ En el primer llamado al requestMapping del controller hay que pasarle /rutaprinc
 Son etiquetas reutlizables que construyen bloques HTML (componentes de formulario)
 Sirven de "puente" (data-binding) capaces de enviar y recibir informacion de objetos Java (beans) desde codigo HTML. 
 
+## Validaciones con Hibernate Validator y Javax-Validation
+Debemos detectar cual es el metodo del controlador que procesa el formulario.
+Una vez alli, debemos especificar la validacion que estamos queriendo hacer.
+Cuando utilizamos validacion, el resultado de la misma ya sea positiva o negativa se almacena en un objeto de tipo BindingResult, debemos contrurir un objeto de ese tipo dentro de los argumentos del metodo que procesa el formulario. 
+
+## @InitBinder
+- Comprueba la peticion al controlador antes de que llegue a este.
+- Se aplica la anotacion a un metodo que sera el encargado de procesar previamente la peticion.
+- Se ejecuta el metodo.
+- Se ejecuta el resto de la peticion en caso de que la validacion sea correcta.
+- No sigue el flujo del metodo en caso de que la validacion de resultado incorrecto.
 
 
-[Spring API docs](https://docs.spring.io/spring-framework/docs/3.1.1.RELEASE/javadoc-api/)
-[Form MVC Tags](https://www.javatpoint.com/spring-mvc-form-tag-library)
+- [Spring API docs](https://docs.spring.io/spring-framework/docs/3.1.1.RELEASE/javadoc-api/)
+- [Form MVC Tags](https://www.javatpoint.com/spring-mvc-form-tag-library)
+- [Spring Form Tags Docu](https://docs.spring.io/spring-framework/docs/4.2.x/spring-framework-reference/html/spring-form-tld.html)
+- [Spring Form Tags Ejemplos](https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/view.html)
+- [Bean Validation](https://www.baeldung.com/java-validation)
+- [Hibernate Validator](https://hibernate.org/validator/)
+- [Hibernate Validator 4.3 Docu](https://docs.jboss.org/hibernate/validator/4.3/reference/en-US/html_single/#validator-usingvalidator-annotate)
+- [MVC Validation Example](https://www.javatpoint.com/spring-mvc-validation)
+-[Pattern](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html)
