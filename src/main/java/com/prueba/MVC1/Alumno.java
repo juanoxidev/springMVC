@@ -7,6 +7,8 @@ import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.*;
 
+import com.prueba.MVC1.validacionespersonalizadas.CPostalMadrid;
+
 
 public class Alumno {
 	@NotEmpty(message = "El email no puede estar vacio")
@@ -22,7 +24,10 @@ public class Alumno {
 	@Min(value=10, message="No se permiten edades menores de 10")
 	@Max(value=21, message="No se permiten edades mayores de 21")
 	private int edad;
+	// expresion regular regexp, mensaje si no completa los 5 valores, validacion codigo postal
+	
 	@Pattern(regexp="[0-9]{5}", message="Ingrese 5 valores numericos")
+	@CPostalMadrid
 	private String codPostal;
 
 

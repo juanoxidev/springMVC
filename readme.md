@@ -42,6 +42,7 @@ Cuando utilizamos validacion, el resultado de la misma ya sea positiva o negativ
 - Se ejecuta el resto de la peticion en caso de que la validacion sea correcta.
 - No sigue el flujo del metodo en caso de que la validacion de resultado incorrecto.
 
+## Validaciones propias
 
 - [Spring API docs](https://docs.spring.io/spring-framework/docs/3.1.1.RELEASE/javadoc-api/)
 - [Form MVC Tags](https://www.javatpoint.com/spring-mvc-form-tag-library)
@@ -51,4 +52,5 @@ Cuando utilizamos validacion, el resultado de la misma ya sea positiva o negativ
 - [Hibernate Validator](https://hibernate.org/validator/)
 - [Hibernate Validator 4.3 Docu](https://docs.jboss.org/hibernate/validator/4.3/reference/en-US/html_single/#validator-usingvalidator-annotate)
 - [MVC Validation Example](https://www.javatpoint.com/spring-mvc-validation)
--[Pattern](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html)
+- [Pattern](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html)
+- [Validaciones Propias](https://www.baeldung.com/spring-mvc-custom-validator)
